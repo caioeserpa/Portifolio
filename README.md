@@ -7,7 +7,7 @@
 - This repository will contain projects in data science and data engineering area.
 
 
-This Projet contains 3 principals folders:
+This Project contains 3 principals folders:
 
 - C.E.S.A.R: Projects that i did during my postgraduate
 - Data Science: Data Science projects
