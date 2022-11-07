@@ -1,0 +1,8 @@
+Started by user [8mha:////4EXPWIgsmD4FsrKnvDURjOe1L+c6VDTdToP7k8i2yU0oAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYu/dLi1CL95MTMfADQc/MnvwAAAA==[0mCaio Serpa
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Cambio
+[Cambio] $ /bin/sh -xe /tmp/jenkins16271207973054440785.sh
++ cd /Cambio
+/tmp/jenkins16271207973054440785.sh: 2: cd: can't cd to /Cambio
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

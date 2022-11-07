@@ -1,0 +1,8 @@
+FROM httpd
+
+#copiando tudo da pasta web para a pasta raiz do apache
+
+COPY ./web/ /usr/local/apache2/htdocs/
+
+
+EXPOSE 80

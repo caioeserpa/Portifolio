@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Billboard &quot;The Hot 100&quot; Songs | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="A collection of &quot;The Hot 100&quot; charts on Billboard" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="education,music" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1665753952603;
+    window["pageRequestEndTime"] = 1665753952687;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/datasets/dhruvildave/billboard-the-hot-100-songs" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=85d731a494547753f1bf" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=5b38fbf0fe266aae2a86" />
+  
+    
+ 
+      <script nonce="3ZDT8NGQtcoiKozxKTaDrg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="3ZDT8NGQtcoiKozxKTaDrg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/datasets/dhruvildave/billboard-the-hot-100-songs" />
+    <meta property="og:title" content="Billboard &quot;The Hot 100&quot; Songs" />
+    <meta property="og:description" content="A collection of &quot;The Hot 100&quot; charts on Billboard" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1211465/2024085/bc7d38ceba238088f3de62c6f2ab2d71/dataset-card.jpg?t=2021-03-15-03-33-56" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Billboard \"The Hot 100\" Songs","description":"## Content\n\nThe Billboard Hot 100 is the music industry standard record chart in the United States for songs, published weekly by Billboard magazine. Chart rankings are based on sales, radio play, and online streaming in the United States.\n\nEvery week, [Billboard](https://www.billboard.com/) releases \"The Hot 100\" chart of songs that were trending on sales and airplay for that week. This dataset is a collection of all \"The Hot 100\" charts released since its inception in 1958.\n\n[Starter Notebook + Basic EDA](https://www.kaggle.com/dhruvildave/starter-basic-eda-billboard)\n\n## Acknowledgements\n\nImage credits: [Photo by Stas Knop from Pexels](https://www.pexels.com/photo/black-cassette-tape-on-top-of-red-and-yellow-surface-1626481/)","url":"https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs","version":11,"keywords":["subject, people and society, education","subject, arts and entertainment, music"],"license":{"@type":"CreativeWork","name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"identifier":["1211465"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Dhruvil Dave","url":"https://www.kaggle.com/dhruvildave","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4331575-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs/download?datasetVersionNumber=11","contentSize":"3198022 bytes"}],"commentCount":2,"dateModified":"2021-11-09T16:59:59.77Z","discussionUrl":"https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs/discussion","alternateName":"A collection of \"The Hot 100\" charts on Billboard","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1211465/2024085/bc7d38ceba238088f3de62c6f2ab2d71/dataset-card.jpg?t=2021-03-15-03-33-56","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":2},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":6948},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":40347},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":137}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8O8KA6ZuOudEn8EWH0HVxwuj7jtAf7DTQJQsz5GAdY9lT9VZlZh62U5wJi3vZIa_0EnGDffaBrlpzPEvJ30GhPdYTAJ4QPp87poJrbwmFiLKoA',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjU3NTQ4NTIsIlVzZXJJZCI6MH0.N9w8EGNjUeWE2PCTvB23grT1CtkXJdkSHWbzMCETEbU',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="3ZDT8NGQtcoiKozxKTaDrg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="3ZDT8NGQtcoiKozxKTaDrg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" src="/static/assets/runtime.js?v=847841e9d06e292d819b" data-turbolinks-track="reload"></script>
+  <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" src="/static/assets/vendor.js?v=5f626ac5446487427ab0" data-turbolinks-track="reload"></script>
+  <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" src="/static/assets/app.js?v=89567ff750f8572b29e7" data-turbolinks-track="reload"></script>
+    <script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="3ZDT8NGQtcoiKozxKTaDrg==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="3ZDT8NGQtcoiKozxKTaDrg==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":1211465,"slug":"billboard-the-hot-100-songs","title":"Billboard \u0022The Hot 100\u0022 Songs","description":"## Content\n\nThe Billboard Hot 100 is the music industry standard record chart in the United States for songs, published weekly by Billboard magazine. Chart rankings are based on sales, radio play, and online streaming in the United States.\n\nEvery week, [Billboard](https://www.billboard.com/) releases \u0022The Hot 100\u0022 chart of songs that were trending on sales and airplay for that week. This dataset is a collection of all \u0022The Hot 100\u0022 charts released since its inception in 1958.\n\n[Starter Notebook \u002B Basic EDA](https://www.kaggle.com/dhruvildave/starter-basic-eda-billboard)\n\n## Acknowledgements\n\nImage credits: [Photo by Stas Knop from Pexels](https://www.pexels.com/photo/black-cassette-tape-on-top-of-red-and-yellow-surface-1626481/)","viewCount":40347,"downloadCount":6948,"scriptCount":22,"topicCount":2,"owner":{"id":4331575,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4331575-kg.jpg","name":"Dhruvil Dave","profileUrl":"/dhruvildave","slug":"dhruvildave","userTier":"MASTER"},"license":{"id":3,"name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"overview":"A collection of \u0022The Hot 100\u0022 charts on Billboard","collaboratorList":{"owner":{"userId":4331575,"profileUrl":"/dhruvildave","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4331575-kg.jpg","name":"Dhruvil Dave","slug":"dhruvildave","userTier":"MASTER","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1211465/2024085/bc7d38ceba238088f3de62c6f2ab2d71/dataset-cover.jpg?t=2021-03-15-03-33-56","data":{"totalSize":3198022,"isFileset":true,"canDownload":true,"firestorePath":"e23rld22N0hiHVpIU7sy/versions/t5jOWoDw9owX51rgyqif","downloadUrl":"/datasets/dhruvildave/dhruvildave/download?datasetVersionNumber=11","versionId":2838933,"id":1235326},"voteCount":137,"medalUrl":"/static/images/medals/datasets/silverl@2x.png","downloadUrl":"/datasets/dhruvildave/billboard-the-hot-100-songs/download?datasetVersionNumber=11","lastUpdateTime":"2021-11-09T16:59:59.770Z","datasetVersionNumber":11,"creatorDisplayName":"Dhruvil Dave","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1211465/2024085/bc7d38ceba238088f3de62c6f2ab2d71/dataset-card.jpg?t=2021-03-15-03-33-56","categories":{"tags":[{"id":11105,"name":"education","fullPath":"subject \u003E people and society \u003E education","listingUrl":"/datasets?group=public\u0026tagids=11105","description":"Education datasets and kernels relate to statistics on student performance, university rankings, and answers for all your homework questions.","datasetCount":10869,"competitionCount":7,"notebookCount":14514,"tagUrl":"/tags/education","displayName":"Education"},{"id":2304,"name":"music","fullPath":"subject \u003E arts and entertainment \u003E music","listingUrl":"/datasets?group=public\u0026tagids=2304","description":"With all the music data out there, it\u0027s hard to believe someone hasn\u0027t trained robots to perform on stage yet. Or have they?","datasetCount":5363,"notebookCount":16785,"tagUrl":"/tags/music","displayName":"Music"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs","forumId":1229500,"datasetVersionId":2792978,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":11,"diffType":"UNVERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script><script nonce="3ZDT8NGQtcoiKozxKTaDrg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="3ZDT8NGQtcoiKozxKTaDrg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>

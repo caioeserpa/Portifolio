@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    container_name: "pg_container"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=raw
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./db:/var/lib/postgresql/data/"
+  bi:
+    image: metabase/metabase
+    ports:
+      - "3000:3000"
+    links:
+      - db
+
+#docker run -d -p 3000:3000 --name metabase metabase/metabase
