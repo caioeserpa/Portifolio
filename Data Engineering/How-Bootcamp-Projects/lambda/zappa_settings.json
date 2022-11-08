@@ -1,0 +1,16 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "profile_name": "andre_aws",
+        "project_name": "mercado-bitcoin-ingestor-lambda",
+        "app_function": "mercado_bitcoin.lambda_function",
+        "lambda_handler": "mercado_bitcoin.lambda_function.lambda_handler",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-belisco-deployments",
+        "events": [{
+           "function": "mercado_bitcoin.lambda_function.lambda_handler",
+           "expression": "rate(1 minute)"
+       }],
+        "cloudwatch_log_level": "INFO"
+    }
+}
