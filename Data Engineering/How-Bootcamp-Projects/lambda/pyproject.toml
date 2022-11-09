@@ -2,7 +2,7 @@
 name = "ingestao_bitcoin"
 version = "0.1.0"
 description = ""
-authors = ["Andre <andresionek91@gmail.com>"]
+authors = ["Serpa <caioeserpa@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
