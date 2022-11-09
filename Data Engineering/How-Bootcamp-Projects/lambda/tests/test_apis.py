@@ -29,13 +29,13 @@ class TestTradesApi:
             ("TEST", datetime.datetime(2019, 1, 1), datetime.datetime(2019, 1, 2),
              "https://www.mercadobitcoin.net/api/TEST/trades/1546300800/1546387200"),
             ("TEST", datetime.datetime(2021, 6, 12), datetime.datetime(2021, 6, 15),
-             "https://www.mercadobitcoin.net/api/TEST/trades/1623452400/1623711600"),
+             "https://www.mercadobitcoin.net/api/TEST/trades/1623456000/1623715200"),
             ("TEST", None, None,
              "https://www.mercadobitcoin.net/api/TEST/trades"),
             ("TEST", None, datetime.datetime(2021, 6, 15),
              "https://www.mercadobitcoin.net/api/TEST/trades"),
             ("TEST", datetime.datetime(2021, 6, 12), None,
-             "https://www.mercadobitcoin.net/api/TEST/trades/1623452400"),
+             "https://www.mercadobitcoin.net/api/TEST/trades/1623456000"),
         ]
     )
     def test_get_endpoint(self, coin, date_from, date_to, expected):
@@ -54,9 +54,9 @@ class TestTradesApi:
         [
             (datetime.datetime(2019, 1, 1), 1546300800),
             (datetime.datetime(2019, 1, 2), 1546387200),
-            (datetime.datetime(2021, 6, 12), 1623452400),
-            (datetime.datetime(2021, 6, 12, 0, 0, 5), 1623452405),
-            (datetime.datetime(2021, 6, 15), 1623711600),
+            (datetime.datetime(2021, 6, 12), 1623456000),
+            (datetime.datetime(2021, 6, 12, 0, 0, 5), 1623456005),
+            (datetime.datetime(2021, 6, 15), 1623715200),
         ]
     )
     def test_get_unix_epoch(self, date, expected):
