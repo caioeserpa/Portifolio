@@ -44,4 +44,4 @@ jobs:
         AWS_ACESS_KEY_ID: $({{secrets.AWS_ACESS_KEY_ID}})]
         AWS_SECRET_ACESS_KEY: $({{secrets.AWS_SECRET_ACESS_KEY}})
         AWS_DEFAULT_REGION: $({{secrets.AWS_DEFAULT_REGION}})
-      run: ci-deploy stage=dev
+      run: make ci-deploy stage=dev
