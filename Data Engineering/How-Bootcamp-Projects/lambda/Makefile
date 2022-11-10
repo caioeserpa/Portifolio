@@ -14,3 +14,6 @@ ci-setup:
 
 ci-test:
 	poetry un python -m pytest
+
+ci-deploy:
+	poetry run zappa update $(stage) || poetry run zappa deploy $(stage)
