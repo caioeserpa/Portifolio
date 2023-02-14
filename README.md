@@ -1,5 +1,6 @@
 # Portfolio
 
+Welcome to my portifolio, you can see more about me in my [linkedin](https://www.linkedin.com/in/caioeserpa/) or my [website](https://www.caionosdados.com.br)
 ---
 
 - This repository contains my portfolio projects, in the table below you'll see a description with the project name, skills that i use in, links to project and the status them.
